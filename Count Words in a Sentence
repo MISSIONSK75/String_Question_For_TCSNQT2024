@@ -1,0 +1,22 @@
+Count Words in a Sentence
+Problem:
+Write a method that counts the number of words in a given sentence.
+
+Input: A string representing the sentence.
+Output: The number of words.
+
+
+
+CODE:
+
+public class Main {
+    public static int countWords(String sentence) {
+        String[] words = sentence.trim().split("\\s+");
+        return words.length;
+    }
+
+    public static void main(String[] args) {
+        String sentence = "TCS NQT exam preparation is essential";
+        System.out.println("Number of words: " + countWords(sentence));
+    }
+}
