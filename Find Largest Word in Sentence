@@ -1,0 +1,27 @@
+Find Largest Word in Sentence
+Problem:
+Write a method to find the largest word in a sentence.
+
+Input: A string representing the sentence.
+Output: The largest word.
+
+
+##CODE:
+
+public class Main {
+    public static String findLargestWord(String sentence) {
+        String[] words = sentence.split(" ");
+        String largestWord = "";
+        for (String word : words) {
+            if (word.length() > largestWord.length()) {
+                largestWord = word;
+            }
+        }
+        return largestWord;
+    }
+
+    public static void main(String[] args) {
+        String sentence = "This is an example of a programming challenge";
+        System.out.println("Largest Word: " + findLargestWord(sentence));
+    }
+}
