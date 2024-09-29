@@ -1,0 +1,64 @@
+Find Average of Array
+Problem:
+Find the average of an array of integers.
+
+Input: An integer array.
+Output: The average value.
+
+
+CODE:
+
+
+
+public class demo {
+    
+    //CREATE METHOD
+    
+    public static double avarageValue(int [] arr1 ){
+        
+        int sum = 0;
+        
+        for(int i = 0; i < arr1.length; i++){
+            
+            sum = sum + arr1[i];
+            
+        }
+        
+        return (double) sum / arr1.length;
+    }
+    
+    
+    
+    
+    
+    
+    
+    public static void main(String [] args){
+        int [] arr = {7, 9, 5, 25, 10};
+        
+        double results = avarageValue(arr);
+        
+        System.out.println(results);
+    }
+}
+    
+
+
+
+
+ANOTHER PROCESS CODE :
+
+public class Main {
+    public static double findAverage(int[] arr) {
+        int sum = 0;
+        for (int num : arr) {
+            sum += num;
+        }
+        return (double) sum / arr.length;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {5, 3, 8, 1, 4};
+        System.out.println("Average value: " + findAverage(arr));
+    }
+}
