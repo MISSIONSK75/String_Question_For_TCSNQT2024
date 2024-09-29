@@ -1,0 +1,70 @@
+Find Missing Number in Array
+Problem:
+You are given an array of size n-1 where the array contains distinct numbers from 1 to n. Find the missing number.
+
+Input: An integer array.
+Output: The missing number.
+
+CODE:
+
+
+
+
+public class demo {
+    
+    //CREATE METHOD;
+    
+    public static int missingElement(int [] arr1, int n){
+        
+        int totalSum = n * (n + 1) / 2;
+        
+        int arraySum = 0;
+        
+        for(int i = 0; i < arr1.length; i++){
+            arraySum = arraySum + arr1[i];
+        }
+        
+        int difference = totalSum - arraySum;
+        
+        return difference;
+    }
+    
+    
+    public static void main(String [] args){
+        int [] arr = {1, 2, 3, 4, 5, 7};
+        int n = 7;
+        
+        //CALL THE METHOD
+        
+        int missing = missingElement(arr, n);
+        
+        System.out.print("Missing Element is :" + missing);
+    }
+}
+   
+    
+    
+
+
+
+
+
+
+###ANOTHER CODE:
+
+public class Main {
+    public static int findMissingNumber(int[] arr, int n) {
+        int totalSum = n * (n + 1) / 2;
+        int arraySum = 0;
+        for (int num : arr) {
+            arraySum += num;
+        }
+        return totalSum - arraySum;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 4, 5};
+        int n = 5;  // Range 1 to 5
+        System.out.println("Missing Number: " + findMissingNumber(arr, n));
+    }
+}
