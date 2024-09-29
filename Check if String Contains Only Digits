@@ -1,0 +1,25 @@
+Check if String Contains Only Digits
+Problem:
+Write a method that checks if a given string contains only digits.
+
+Input: A string.
+Output: "Yes" if it contains only digits, otherwise "No"
+
+
+##CODE:
+
+public class Main {
+    public static String isNumeric(String str) {
+        for (char ch : str.toCharArray()) {
+            if (!Character.isDigit(ch)) {
+                return "No";
+            }
+        }
+        return "Yes";
+    }
+
+    public static void main(String[] args) {
+        String str = "123456";
+        System.out.println("Is Numeric: " + isNumeric(str));
+    }
+}
