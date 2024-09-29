@@ -1,0 +1,64 @@
+Check Palindrome String
+Problem:
+Write a method to check if a given string is a palindrome.
+
+Input: A string.
+Output: "Yes" if it is a palindrome, otherwise "No".
+
+
+CODE:
+
+
+
+public class palindromeCheck {
+    
+    
+    //CREATE METHOD
+    
+    public static String checkPalindrome (String str1){
+        
+        StringBuffer sb = new StringBuffer(str1);
+            
+            String updatedResult = sb.reverse().toString();
+            
+            if(str1.equals(updatedResult)){
+            return "Yes";
+            
+            } else {
+                
+           return "No";
+            }
+        
+    }
+    
+    public static void main (String [] args ){
+        
+        String str = "madam";
+        
+        System.out.println(str + " is Palindrome ? " + (checkPalindrome(str)));
+    }
+}
+    
+
+
+
+
+
+
+ANOTHER CODE:
+
+public class Main {
+    public static String isPalindrome(String str) {
+        String reversed = new StringBuilder(str).reverse().toString();
+        if (str.equals(reversed)) {
+            return "Yes";
+        } else {
+            return "No";
+        }
+    }
+
+    public static void main(String[] args) {
+        String str = "madam";
+        System.out.println("Is Palindrome: " + isPalindrome(str));
+    }
+}
