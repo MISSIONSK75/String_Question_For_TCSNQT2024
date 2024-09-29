@@ -1,0 +1,49 @@
+Remove Vowels from a String
+Problem:
+Remove all vowels from a given string.
+
+Input: A string.
+Output: The string without vowels.
+
+
+##CODE :
+
+
+
+public class demo {
+    public static void main(String [] args){
+        String name = "my name is mission sk";
+        
+        String result = name.replaceAll("[AEIOUaeiou]", " ");
+        
+        System.out.println(result);
+    }
+}
+
+
+
+
+###ANOTHER CODE:
+
+
+
+
+public class demo {
+    
+    public static String finalResult(String name){
+        
+        String result = name.replaceAll("[AEIOUaeiou]", " ");
+        
+        return result;
+        
+    }
+    
+    
+    public static void main(String [] args){
+        String name = "my name is mission sk";
+        
+        
+        
+        System.out.println(finalResult(name));
+    }
+}
