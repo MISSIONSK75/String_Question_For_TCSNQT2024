@@ -1,0 +1,51 @@
+Remove Duplicates from Array
+Problem:
+Remove duplicates from an array and return the result.
+
+Input: An integer array.
+Output: The array without duplicates.
+
+
+CODE :
+
+
+import java.util.HashSet;
+import java.util.Arrays;
+
+public class removeDuplicateExample1 {
+        
+        public static void main (String [] args ){
+        
+        int [] arr1 = { 7, 8, 5, 7, 10, 9, 99};
+        
+        int n = arr1.length;
+        
+        HashSet<Integer> updated = new HashSet<>();
+        
+        for (int i = 0; i < n; i++){
+            updated.add(arr1[i]);
+        }
+        
+        for (int no : updated){
+           System.out.print(no+ " ");
+        }
+        
+        System.out.println();
+        
+        Arrays.sort(arr1);
+        
+        System.out.println("After Sorting Arrays are :");
+        
+        for(int i = 0; i < n; i++){
+            System.out.print(arr1[i]+" ");
+        }
+        
+        }
+}
+        
+        
+        
+        
+    
+    
+  
