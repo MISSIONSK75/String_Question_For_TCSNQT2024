@@ -1,0 +1,42 @@
+Check if Array is Sorted
+Problem:
+Write a method to check if an array of integers is sorted in ascending order.
+
+Input: An integer array.
+Output: "Yes" if sorted, otherwise "No".
+
+
+CODE:
+
+
+
+public class demo {
+    
+    
+//create method;
+
+public static String checkValid(int [] arr1){
+    
+    for (int i = 1; i < arr1.length; i++){
+        
+        if (arr1[i] < arr1[i - 1]){
+            
+            return "No";
+        }
+    }
+    
+    
+    return "Yes";
+    
+    
+}
+    
+    
+ 
+    public static void main (String [] args){
+        
+        int [] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9);
+        
+        System.out.println (checkValid(arr));
+    }
+}
