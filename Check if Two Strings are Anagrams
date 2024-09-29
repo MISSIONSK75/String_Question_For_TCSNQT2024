@@ -1,0 +1,31 @@
+Check if Two Strings are Anagrams
+Problem:
+Write a method that checks if two given strings are anagrams of each other.
+
+Input: Two strings.
+Output: "Yes" if they are anagrams, otherwise "No".
+
+
+##CODE:
+
+import java.util.Arrays;
+
+public class Main {
+    public static String areAnagrams(String str1, String str2) {
+        char[] arr1 = str1.toCharArray();
+        char[] arr2 = str2.toCharArray();
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+        if (Arrays.equals(arr1, arr2)) {
+            return "Yes";
+        } else {
+            return "No";
+        }
+    }
+
+    public static void main(String[] args) {
+        String str1 = "listen";
+        String str2 = "silent";
+        System.out.println("Are Anagrams: " + areAnagrams(str1, str2));
+    }
+}
