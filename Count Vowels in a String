@@ -1,0 +1,38 @@
+Count Vowels in a String
+Problem:
+Write a program that counts the number of vowels (a, e, i, o, u) in a given string.
+
+Input: A string.
+Output: Number of vowels.
+
+
+CODE :
+
+
+
+public class demo {
+    
+    //CREATE METHOD
+    
+    public static int checkVowel(String str1){
+        int count = 0;
+        
+        for(char ch : str1.toLowerCase().toCharArray()){
+            if("aeiou".indexOf(ch) != -1){
+                count++;
+            }
+        }
+        
+        return count;
+    }
+    
+    public static void main (String [] args){
+        
+        
+        String str = "my name is mission sk";
+        
+        int results = checkVowel(str);
+        
+        System.out.println(results);
+    }
+}
