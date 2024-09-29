@@ -1,0 +1,33 @@
+Story-Based String Manipulation
+Problem: A library maintains a record of book titles. Due to a formatting issue, some titles contain extra spaces between words. Your task is to clean the titles by removing any extra spaces between words (i.e., only one space should separate words), and trim any leading or trailing spaces.
+
+Input: A string representing a book title.
+
+Output: Return the cleaned version of the book title.
+
+Example:
+
+plaintext
+Copy code
+Input: "   The   Great   Gatsby  "
+Output: "The Great Gatsby"
+
+
+##CODE:
+
+public class Main {
+    public static String cleanTitle(String title) {
+        // Trim leading and trailing spaces
+        title = title.trim();
+        // Split the string by spaces and filter out empty parts
+        String[] words = title.split("\\s+");
+        // Join the words back with a single space
+        return String.join(" ", words);
+    }
+
+    public static void main(String[] args) {
+        String title = "   The   Great   Gatsby  ";
+        String cleanedTitle = cleanTitle(title);
+        System.out.println("Cleaned Title: \"" + cleanedTitle + "\"");
+    }
+}
