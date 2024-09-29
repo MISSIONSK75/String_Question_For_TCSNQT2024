@@ -65,6 +65,63 @@ public class demo {
 
 }   
 }
+
+
+
+
+ANOTHER CODE USING METHOD FUNCTION :
+
+
+
+
+
+public class demo {
+    
+    public static int checkArray(int[] arr1){
+        
+        int n = arr1.length;
+        
+        int largest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
+        
+        
+        for (int i = 0; i < n; i++){
+            
+               if(arr1[i] > largest){
+            secondLargest = largest;
+            largest = arr1[i];
+        }
+        
+        if(arr1[i] > secondLargest && arr1[i] < largest){
+            secondLargest = arr1[i];
+        }
+        
+        }
+        
+         return secondLargest;
+         
+    }
+        
+       
+      public static void main (String []args){
+        int [] arr = {2, 5, 9, 7, 6, 75, 34, 33, 34};
+        
+        int result = checkArray(arr);
+        
+        System.out.println(result);
+        
+        
+}
+
+}   
+    
+    
+    
+    
+   
+    
+    
+  
     
     
   
