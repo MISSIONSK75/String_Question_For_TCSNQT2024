@@ -1,0 +1,32 @@
+Sum of Even Numbers in Array
+Problem:
+Find the sum of all even numbers in an array of integers.
+
+Input: An integer array.
+Output: The sum of even numbers.
+
+
+##CODE:
+
+
+
+public class demo {
+    
+    public static void main(String [] args){
+        
+       int [] arr = {2, 5, 4, 8, 9, 10, 15, 20};
+       
+       int n = arr.length;
+       
+       int sum = 0;
+       
+       for(int num : arr){
+           if(num % 2 == 0){
+               sum = sum + num;
+           }
+       }
+       
+     System.out.println("Sum Of All Even Numbers is :" + sum);
+    }
+}
+
