@@ -1,0 +1,39 @@
+Reverse a String
+Problem:
+Write a method that takes a string and returns its reverse.
+
+Input: A string.
+Output: The reversed string.
+
+
+CODE:
+
+
+
+public class demo {
+    
+    //CREATE METHOD
+    
+    public static String checkVowel(String str1){
+        
+        StringBuffer sb = new StringBuffer(str1);
+        
+       String updated = sb.reverse().toString();
+       
+       return updated;
+      
+        
+    }
+    
+    
+    public static void main (String [] args){
+        
+        
+        String str = "my name is mission sk";
+        
+        
+        String results = checkVowel(str);
+        
+        System.out.println(results);
+    }
+}
