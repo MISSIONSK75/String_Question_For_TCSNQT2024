@@ -1,0 +1,95 @@
+Find First Largest in Array
+Problem:
+Find the First largest number in an array of integers.
+
+Input: An integer array.
+Output: The First largest number.
+
+
+
+CODE: 
+
+
+
+
+public class demo {
+    public static void main(String [] args){
+        int [] arr = {70,90,10,20,58,75};
+        
+        int n = arr.length;
+        int i;
+        
+        int largest = Integer.MIN_VALUE;
+        
+        for(i = 0; i < n; i++){
+            if(arr[i] > largest){
+                largest = arr[i];
+            }
+        }
+        
+        System.out.print("First Largest Element in Array is :"+ largest);
+    }
+}
+    
+   
+    
+    
+
+
+
+##ANOTHER CODE:
+
+
+
+
+
+
+public class demo {
+    
+    public static int checkArray(int[] arr1){
+        
+        int n = arr1.length;
+        
+        int largest = Integer.MIN_VALUE;
+      //  int secondLargest = Integer.MIN_VALUE;
+        
+        
+        for (int i = 0; i < n; i++){
+            
+               if(arr1[i] > largest){
+            //secondLargest = largest;
+            largest = arr1[i];
+        }
+        
+        // if(arr1[i] > secondLargest && arr1[i] < largest){
+        //     secondLargest = arr1[i];
+        // }
+        
+        // }
+        
+        }
+        
+         return largest;
+         
+    }
+        
+       
+      public static void main (String []args){
+        int [] arr = {2, 5, 9, 7, 6, 75, 34, 33,100,100, 34};
+        
+        int result = checkArray(arr);
+        
+        System.out.println(result);
+        
+        
+}
+
+}   
+    
+    
+    
+    
+   
+    
+    
+  
